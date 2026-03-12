@@ -33,6 +33,7 @@ async def trophy_update():
     try:
         r = requests.get(url, headers=headers)
         data = r.json()
+        print(data)
     except Exception as e:
         print("Request failed:", e)
         return
